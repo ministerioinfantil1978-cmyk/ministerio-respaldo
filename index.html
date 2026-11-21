@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100d14">
+<meta name="description" content="Ministerio Apostólico y Profético de Liberación Sobrenatural de Chile Internacional. Radio, televisión y programas.">
+<title>Ministerio Apostólico y Profético</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top" id="inicio">
+  <a class="seal" href="#inicio" aria-label="Inicio"><b>SELLO</b><small>OFICIAL PENDIENTE</small></a>
+  <div><p class="eyebrow">MINISTERIO APOSTÓLICO Y PROFÉTICO</p><h1>LIBERACIÓN SOBRENATURAL</h1><p class="sub">DE CHILE INTERNACIONAL</p></div>
+  <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="nav">☰</button>
+</header>
+<nav id="nav" class="nav"><a href="#television">Televisión</a><a href="#radio">Radio</a><a href="#programas">Programas</a><a href="#ministerio">Ministerio</a><a href="#redes">Redes y contacto</a></nav>
+<main id="contenido">
+<section class="hero">
+ <p class="eyebrow">BIENVENIDOS</p><h2>Un espacio para escuchar, aprender y crecer en la Palabra.</h2>
+ <p>Radio, televisión y contenidos del ministerio en un solo lugar.</p>
+ <div class="actions"><a class="btn gold" href="#television">Ver televisión</a><a class="btn outline" href="#radio">Escuchar radio</a></div>
+</section>
+<section id="television" class="section">
+ <div class="section-head"><div><p class="eyebrow">TRANSMISIONES</p><h2>A Solas con Dios TV</h2></div><span class="status">Portal en preparación</span></div>
+ <div class="screen"><div class="screen-mark">A SOLAS CON DIOS <strong>TV</strong></div><p>La señal se habilitará al conectar la emisión.</p><span class="play" aria-hidden="true">▶</span></div>
+ <div class="signal-grid"><article class="tile"><span class="tag">SEÑAL 01</span><h3>Programación continua</h3><p>Espacio para vídeos y programas grabados.</p><span class="pending">Fuente de emisión pendiente</span></article><article class="tile"><span class="tag">SEÑAL 02</span><h3>En vivo</h3><p>Espacio para las transmisiones en directo.</p><span class="pending">Conexión en vivo pendiente</span></article></div>
+</section>
+<section id="radio" class="section">
+ <p class="eyebrow">ESCUCHA</p><h2>Radios del ministerio</h2>
+ <div class="signal-grid"><article class="tile"><h3>A Solas con Dios</h3><p>Radio principal</p><span class="pending">Reproductor por conectar</span></article><article class="tile"><h3>A Solas con Dios Kids</h3><p>Radio infantil</p><span class="pending">Reproductor por conectar</span></article></div>
+</section>
+<section id="programas" class="section">
+ <p class="eyebrow">CONTENIDOS</p><h2>Nuestros programas</h2>
+ <div class="program-grid">
+  <article class="program"><span>01</span><h3>Leoncín y Aguilín</h3><p>Historias y enseñanzas para niños.</p></article>
+  <article class="program"><span>02</span><h3>Frutibíblicas</h3><p>Aprendizajes bíblicos para la familia.</p></article>
+  <article class="program"><span>03</span><h3>Reflexiones Padre e hijo</h3><p>Conversaciones y valores para la vida.</p></article>
+  <article class="program"><span>04</span><h3>Historias que despiertan</h3><p>Relatos con enseñanzas y reflexión.</p></article>
+  <article class="program"><span>05</span><h3>La Biblia responde</h3><p>Preguntas a la luz de la Palabra.</p></article>
+  <article class="program"><span>06</span><h3>A Solas con Dios</h3><p>Adoración y música.</p></article>
+ </div>
+</section>
+<section id="ministerio" class="section about"><p class="eyebrow">NUESTRA MISIÓN</p><h2>Un ministerio al servicio de Dios y las personas</h2><p>Este portal reúne los espacios de enseñanza, adoración, acompañamiento y contenidos para toda la familia.</p></section>
+<section id="redes" class="section"><p class="eyebrow">CONECTA</p><h2>Redes y contacto</h2><p class="muted">Los enlaces oficiales se incorporarán cuando estén confirmados.</p><div class="pending-box">Enlaces de redes y contacto pendientes de verificar.</div></section>
+</main>
+<footer><span>Ministerio Apostólico y Profético de Liberación Sobrenatural de Chile Internacional</span><small>Portal inicial · Identidad visual oficial pendiente de incorporar</small></footer>
+<script>
+const b=document.getElementById('menuBtn'),n=document.getElementById('nav');
+b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open',!o)});
+n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false')}));
+</script>
+</body></html>
